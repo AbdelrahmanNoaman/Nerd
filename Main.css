@@ -1,0 +1,946 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: ;
+}
+header{
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .brand {
+    color:#fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigation{
+    position:Fixed;
+    display: flex;
+    flex-direction: row;
+    background: rgba(46,102,101,0.99);
+    width: 100%;
+    top:0.01px;
+    left:0;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color:rgb(239, 97, 49);
+    font-size: 1.05em;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: rgb(239, 97, 49);
+    width: 0;
+    height:3px;
+    bottom:-3px;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width:100%;
+}
+section{
+    padding :100px 200px ;
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    top:20px;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(46,102,101,0.95);
+}
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 20;
+    left: 0;
+
+}
+.home .content{
+    z-index: 888;
+    color:#fff;
+    width: 60%;
+    margin-top:90px;
+    display: none;
+}
+.home .content.active{
+    display: block
+}
+.home .content h1{
+font-size: 4em;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 5px;
+line-height: 75px;
+margin-bottom: 40px;
+}
+.home .content h1 span{
+  font-size: 1.2em;
+  font-weight: 600;  
+}
+.home .content p{
+    margin-bottom: 65px;
+}
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: rgba(46,102,101,0.95);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.menu-btn{
+    display: none;
+}
+.Main-Image{
+        z-index:1;
+        position:absolute;
+        top:0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+}
+.WithButton{
+    margin: auto;
+    background-color: rgba(46,102,101,0.95);
+    width:100%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+button{
+    position: absolute;
+    top:60%;
+    left: 46%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    padding: 10px 25px;
+    background-color: rgb(239, 97, 49);
+    color:white;
+    transition: 0.5s;
+}
+img{
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+button:hover{
+    background-color: rgb(197, 81, 42);
+}
+.FirstWhiteWord{
+    color:rgb(191, 208, 219)!important;
+text-align: center;
+left:40%;
+top:51%;
+font-size: 13px !important;
+}
+.FirstMandWord{
+    text-align: center;
+    left:42%;
+    top:38%;
+    line-height: 39px;
+
+}
+
+.WhitoutButton{
+    display:none;
+    opacity: 0;
+}
+.extraContent{
+    margin-right:500px;
+}
+.OurVisionDupImgtop{
+width:auto;
+height:60%;
+z-index: 800;
+position: absolute;
+left:37%;
+top:21%;
+clip: auto;
+}
+.SmallImage{
+    width:22%;
+    height: 200px;
+    margin:20px;
+    margin-top: 120px;
+}
+.MyPhotos{
+    width:100%;
+    margin-right:50px
+}
+.MyContent{
+    width:100%;
+}
+.fa-angle-right{
+position: absolute;
+right:2%;
+top:60%;
+}
+.fa-angle-left{
+    position: absolute;
+    left:2%;
+    top:59%;
+}
+.fa:hover{
+    transform: scale(1.1);
+}
+.MytitleFinal{
+    margin-bottom: 80px;
+    margin-left: 500px;
+    text-align: center;
+}
+.MySmallContentFinal{
+    margin-top: 20px;
+    margin-left:200px;
+}
+.MySmallContentFinal:before{
+    content: 'L';
+    font-size: 95px;
+    position: absolute;
+    left:370px;
+    top:190px;
+    color: rgba(239, 97, 49,0.5);
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: absolute;
+    top:80%;
+    left:48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100px);
+    margin-bottom: 12px;
+}
+.slider-navigation .nav-btn{
+    width:12px;
+    height:12px;
+    background: white;
+    border-radius: 50%;
+    cursor:pointer;
+    box-shadow: 0 0 2px rgba(255,255,255,0.5);
+    transition: 0.3s ease;
+}
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+.slider-navigation .nav-btn:hover{
+    background:rgb(239, 97, 49);
+}
+.slider-navigation .nav-btn.active{
+background-color: rgb(239, 97, 49);
+}
+
+.Image-Slide{
+    position: absolute;
+     width:100%;
+     clip-path: circle(0% at 0 50%);
+     z-index: 1;
+
+}
+.Image-Slide.active{
+    z-index: 25;
+    clip-path: circle(150% at 0 50%);
+    transition: 2.6s ease;
+    transition-property: clip-path ;
+}
+
+@media(max-width:1040px){
+    header{
+        padding: 12px 20px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+    .home .media-icons{
+        right:15px;
+    }
+    header .navigation{
+        position: relative;
+        display:none;
+    }
+    .menu-btn{
+        color:white;
+        display: block;
+        font-size: 30px;
+        width:40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+
+    }
+}
+.MandarinWords{
+    font-size: 30px;
+    z-index:800;
+    color:rgb(239, 97, 49);
+    font-weight: 800;
+    position: absolute;
+}
+
+.WhiteWords{
+color:white;
+z-index: 800;
+font-size: 20px;
+position: absolute;
+line-height: 1.3;
+letter-spacing: 1.5px;
+}
+.CenteredElements{
+    text-align: center;
+}
+
+.SecondSecTitle{
+    left:47%;
+    top:23%;
+    text-align: center;
+}
+.OurDummyOnes{
+left:26%;
+top:34%;
+text-align: center;
+line-height: 1.3;
+}
+.OurDummyOnes:before{
+    content: 'L';
+    font-size: 95px;
+    position: absolute;
+    left:-25px;
+    top:-40px;
+    color: rgba(239, 97, 49,0.5);
+}
+.SecondDummyOnes{
+    font-weight: 300 !important;
+    font-size: 37px;
+    right:5%;
+    bottom:10%;
+    text-transform: uppercase;
+}
+.SpecialDummy{
+    font-size: 17px;
+    right: 2%;
+    bottom:5%;
+    text-transform:none;
+}
+.MainSec{
+    z-index: 200;
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    top:20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.MainSec:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46,102,101,0.95);
+}
+
+.ThirdSecTitle{
+    left:23%;
+    top:26%;
+    text-align: center;
+}
+.ForthSectionTitle{
+    left:20%;
+    top:30%;
+    text-align: center;
+}
+.ThirdDummys{
+font-size: 15px;
+left:21%;
+top:32%;
+text-align:left;
+line-height: 1.3;
+}
+.ThirdDummys:before{
+content: 'W';
+font-size: 95px;
+position: absolute;
+left:-40px;
+top:-55px;
+color: rgba(239, 97, 49,0.3);
+}
+.OurVisionImg{
+   width:350px;
+    height:290px;
+    z-index: 800;
+    position: absolute;
+    left:18%;
+    top:45%;
+    border-radius: 3px;
+    box-shadow: -30px 25px rgb(239, 97, 49);
+}
+.OurMissionImg{
+     width:400px;
+     height:400px;
+     z-index: 800;
+     position: absolute;
+     left:55%;
+     top:26%;
+     border-radius: 3px;
+     box-shadow: 30px 25px rgb(239, 97, 49);
+ }
+.SpecialDummyVision{
+font-size: 17px;
+right:12%;
+top:52%;
+text-align:left;
+line-height: 1.3;
+letter-spacing: 1.5px;
+}
+.SpecialDummyMission{
+    font-size: 17px;
+    left:17%;
+    top:38%;
+    text-align:left;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+}
+.SpecialDummyMission:before{
+    content: 'W';
+    font-size: 95px;
+    position: absolute;
+    left:-35px;
+    top:-55px;
+    color: rgba(239, 97, 49,0.3);  
+    }
+    .FifthSectionTitle{
+        left:16%;
+        top:27%;
+        text-align: center;
+    }
+.FirstParagraphTitle{
+    font-size: 27px !important;
+    left:18%;
+    top:42%;
+    text-align: center;
+}
+.FirstParagraphContent{
+    font-size: 17px;
+    left:18%;
+    top:48%;
+    text-align:left;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+}
+.FirstParagraphContent:before{
+    content: 'C';
+    font-size: 95px;
+    position: absolute;
+    left:-80px;
+    top:-65px;
+    color: rgba(239, 97, 49,0.5);
+}
+.EarlyOne{
+    position: absolute;
+    left:-20%;
+    top:100%;
+}
+
+.SecondParagraphTitle{
+    left:64%;
+    top:34%;
+    text-align: center;
+}
+.SecondParagraphContent{
+    font-size: 17px;
+    left:64%;
+    top:40%;
+    text-align:left;
+}
+.SecondParagraphContent:before{
+    content: 'I';
+    font-size: 100px;
+    position: absolute;
+    left:-60px;
+    top:-70px;
+    color: rgba(239, 97, 49,0.5);
+}
+.EarlyTwo{
+    position: absolute;
+    left:-13%;
+    top:100%;
+}
+.ThirdParagraphTitle{
+    left:64%;
+    top:65%;
+    text-align: center;
+}
+.ThirdParagraphContent{
+    font-size: 17px;
+    left:64%;
+    top:71%;
+    text-align:left;
+}
+.ThirdParagraphContent:before{
+    content: 'P';
+    font-size: 100px;
+    position: absolute;
+    left:-60px;
+    top:-70px;
+    color: rgba(239, 97, 49,0.5);
+}
+.EarlyThree{
+    position: absolute;
+    left:-20%;
+    top:100%;
+    letter-spacing: 0.86px;
+}
+
+.ForthParagraphTitle{
+    left:22%;
+    top:37%;
+    text-align: center;
+}
+.ForthParagraphContent{
+    font-size: 17px;
+    left:22%;
+    top:43%;
+    text-align:left;
+}
+.ForthParagraphContent:before{
+    content: 'T';
+    font-size: 120px;
+    position: absolute;
+    left:-80px;
+    top:-75px;
+    color: rgba(239, 97, 49,0.5);
+}
+.EarlyFour{
+    position: absolute;
+    left:-7%;
+    top:100%;
+    letter-spacing: 0.86px;
+}
+.DummyMissionDup{
+    font-size: 17px;
+    left:19%;
+    top:36%;
+    text-align:left;
+}
+.DummyMissionDup::before{
+    content: 'L';
+    font-size: 110px;
+    position: absolute;
+    left:-80px;
+    top:-70px;
+    color: rgba(239, 97, 49,0.5);
+}
+.SpecialDummyMissionDup{
+    font-size: 17px;
+    left:15%;
+    top:43%;
+    text-align:left;
+    line-height: 25px;
+}
+.OurLoremImg{
+    width:auto;
+    height:290px;
+    z-index: 800;
+    position: absolute;
+    left:18%;
+    top:40%;
+    border-radius: 3px;
+    clip: auto;
+}
+.TryDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.TryDivContent{
+    z-index: 800;
+    position: absolute;
+    right:0%;
+    top:23%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 30px;
+}
+.left{
+    float:left;
+    z-index: 800;
+    width: 50%;
+}
+.right{
+    float:right;
+    width: 50%;
+    z-index: 800;
+}
+.OurVisionDupImg2{
+width:auto;
+height:60%;
+z-index: 800;
+position: absolute;
+left:17%;
+top:21%;
+clip: auto;
+}
+.OurVisionDupImg{
+    width:50%;
+    height:100%;
+
+}
+.VisionDupTitle{
+    color:rgb(239, 97, 49);
+    font-size: 27px;
+    line-height: 35px;
+}
+.Space{
+    height: 50px;
+}
+.LogoDup{
+display: flex;
+flex-direction: row;
+margin-left: 20px;
+}
+.ColumnFlex{
+    display: flex;
+    flex-direction: column;
+    z-index:800;
+}
+.ContentLogo{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    height: 100%;
+    margin-left: 20px;
+    margin-bottom: 160px;
+    font-size: 15px;
+}
+.LogoDetails{
+    margin-bottom: 35px;
+}
+.Years{
+    float:left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 22px;
+   
+}
+.SpecialYear{
+    width:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    text-align: center;
+    border:1px solid transparent;
+    background-color: rgb(239, 97, 49);
+    margin-bottom: 45px;
+    transition: 0.5s;
+}
+.SpecialYear:hover{
+    transform: scale(1.1);
+}
+.LogoTitle{
+    font-size: 25px !important;
+
+    text-align: left;
+  margin: 90px 0px 70px 20px;
+    letter-spacing: 3px;
+}
+.SectionNothing{
+    font-size: 20px;
+    margin-right:20px;
+    line-height: 30px;
+    margin-top:60px;
+    color: white;
+}
+.SectionNothing :before{
+    content: 'L';
+    font-size: 90px;
+    position: absolute;
+    left:280px;
+    top:290px;
+    color: rgba(239, 97, 49,0.5);
+}
+.Title{
+    font-size: 25px !important;
+    color: rgb(239, 97, 49);
+    text-align: left;
+    letter-spacing: 3px;
+    margin-left:400px;
+}
+.FlexOne{
+  z-index: 800;
+  width:100%;
+  height: 450px;
+  margin-Left:110px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.photo{
+    width: auto;
+    height: 100px;
+}
+.PersonalPhoto{
+    width:auto;
+height: 300px;
+z-index: 800;
+top:0;
+position: relative;
+}
+.PhotoDivs{
+width:100%
+}
+hr{
+    margin-top:35px;
+    width:190px;
+    text-align: center;
+    margin-left: 90px;
+    color:white;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.PersonalInfo{
+width:33%;
+z-index: 800;
+text-align:center;
+}
+.DrName{
+    font-size: 25px;
+    color:white;
+}
+.PersonalTitle{
+    font-size: 20px;
+    color:rgb(239, 97, 49);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.Email{
+    color:rgba(141,154,162,1);
+}
+.SocialMedia{
+    justify-content: center;
+    color:white;
+}
+.icon{
+    margin:10px;
+    background-color: rgb(239, 97, 49);
+    padding:4px;
+    border-radius: 4px;
+}
+.fa-facebook{
+    padding:0px 2px;
+}
+
+.MyOwnTitle{
+    font-size: 25px;
+    z-index:800;
+    color:white;
+    font-weight: 800;
+
+    margin-bottom: 40px;
+    margin-left: 43%;
+    letter-spacing: 2.5px;
+}
+
+.SpecialPart{
+    width:29%;
+    background-color:rgb(239, 97, 49);
+    border:1px solid rgb(239, 97, 49);
+    border-radius: 30px;
+    height:450px;
+}
+.photo1{
+    width:300.3px;
+    height: 450px;
+    border-radius: 30px;
+    z-index:799;
+}
+
+.SpecialPhoto:before{
+    z-index: 888;
+    content: '';
+    border-radius: 30px;
+    position: absolute;
+    width: 300.3px;
+    height: 450px;
+    top: 250;
+    left: 200;
+    background-color: rgba(56, 56, 58, 0.274);
+}
+.layer{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top :0;
+    bottom: 0;
+    transition: 0.7s;
+    z-index: 899;
+}
+.layer h3{
+width: 100%;
+font-weight: 200;
+font-size: 18px;
+letter-spacing: 2px;
+color: white;
+bottom: 36%;
+left:61%;
+transform: translateX(-50%);
+position:absolute;
+opacity:1;
+transition: 0.7s;
+}
+
+.MyTitle{
+    text-align: center;
+    color:white;
+    font-size: 25;
+    margin-top:40px;
+    margin-bottom: 17px;
+    letter-spacing: 1.6px;
+    line-height: 26px;
+}
+.smallspecial2{
+    margin-right:111px
+}
+.Extraplz{
+    margin-left:50px ;
+}
+.MapsImage{
+    z-index: 888;
+    width: 100%;
+}
+.MapsIMG{
+    height:500px;
+    width :auto;
+}
+.MyInputs{
+    margin-top: 200px;
+}
+input{
+    height: 35px;
+    border-radius:20px;
+    width:90%;
+    margin:6px;
+    margin-right: 50px;
+    background-color: rgba(141,154,162,1);
+    border:1px solid transparent;
+    color:white
+}
+.SpecialTitleColor{
+    color: rgb(151, 137, 57);
+    font-weight: 600;
+}
+input::placeholder{
+    color: white;
+    margin-left:5px;
+}
+.SpecialInput{
+    width:95%;
+    height:40px
+}
+.MapsInfo{
+    margin-right:150px;
+    width:60%
+}
+
+.TitleWords{
+    margin-bottom: 50px;
+}
+.NormalWords{
+    margin-top: 50px;
+}
+.SUBMITBUT{
+    background-color:rgb(239, 97, 49) ;
+}
+.FinalContent{
+    width: 100%;
+}
+.Address{
+    width:33.3%;
+}
+.phones{
+    width:33.3%;
+    margin-left: 80px;
+}
+.Emails{
+    width:33.3%;
+}
+.Titless{
+    position: absolute;
+    top:25%;
+}
+.FCOLTitle{
+   top:25%
+}
+.Contanctss{
+    position: absolute;
+    top:35%
+}
+.Numberrrr{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    color:white;
+
+}
+.specialicon{
+    margin-bottom: 5px;
+}
+.ThirdColT{
+    position: absolute;
+    top:50%;
+}
+.icon{
+    color:white
+}
+.Finally{
+    z-index: 888;
+    width: 100%;
+    height:20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color:white;
+    background-color: rgb(239, 97, 49);
+}
+.FColCont{
+    line-height: 40px;
+}
